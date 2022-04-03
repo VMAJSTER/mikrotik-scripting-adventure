@@ -6,7 +6,7 @@
 #
 #
 # magic
-/tool fetch url=https://downloads.nordcdn.com/certificates/root.der; # cert dl 4nord
+/tool fetch url="https://downloads.nordcdn.com/certificates/root.der"; # cert dl 4nord
 :delay 2 # w8 for dl
 /certificate import file-name=root.der name=NordVPN passphrase=""; # import cert 4nord
 /file remove "root.der"; # rm downloaded cert
