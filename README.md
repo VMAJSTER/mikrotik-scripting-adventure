@@ -1,17 +1,31 @@
 # mikrotik-scripting-adventure
-some little shit specially for Mikrotik Family devices
+    some little shit specially for Mikrotik Family devices    
 
-Usage:
-/import name-of-script.rsc variable1 variable2
+## Usage:
+>/import name-of-script.rsc variable1ifneeded variable2ifneeded    
 
-for NordVPN:  
-Edit variables inside script (or later, after loaded)
-Default settings:
+ꝿ all are compatible with 1st initial defconf   
+ꝿ tested at RoSv6 6.48.6    
+ꝿ use CMD+F or CTRL+F to find tut for interested script
+## NordVPN:  
+Using VPN of any device connected to your local network (WiFi etc.)   
+Edit variables inside of script (or later, after loaded)
+### ToDo
+- [x] working
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add Variables for those settings:tada:
 
-username=empty
+### Default settings:
 
-password=empty
+    username=empty    
+GoTo: IP -> IPSEC -> Identities   
 
-network=192.168.77.0/24 #assing to bridge named "bridge"
+    password=empty    
+GoTo: IP -> IPSEC -> Identities   
 
-server=ua62.nordvpn.com #slava-ukraini
+    network=192.168.77.0/24 #assingned to bridge named "bridge" and Address List called "NordVPN"    
+GoTo: IP -> Adresses    
+GoTo: IP -> FIREWALL -> Address Lists   
+
+    server=ua62.nordvpn.com #slava-ukraini    
+GoTo: IP -> IPSEC -> Peers    
