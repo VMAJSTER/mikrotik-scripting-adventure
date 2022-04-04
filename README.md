@@ -12,8 +12,7 @@ Using VPN of any device connected to your local network (WiFi etc.)
 Edit variables inside of script (or later, after loaded)
 ### ToDo
 - [x] working
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add Variables for those settings:tada:
+- [ ] Add inputs for those settings:tada:
 
 ### Default settings:
 
